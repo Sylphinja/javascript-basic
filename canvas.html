@@ -1,0 +1,21 @@
+<button id="btn-ramdom" onclick="testClick()">Random</button>
+
+<canvas id="myCanvas" width="250" height="250"> </canvas>
+
+<style>
+  canvas {
+    background-color: lightblue;
+    color: darkgoldenrod;
+    border: solid palegoldenrod 3px;
+  }
+</style>
+<script>
+  let canvas = document.getElementById("myCanvas");
+  let canvas_ = canvas.getContext("2d");
+  canvas_.font = "30px Arial";
+  canvas_.fillText("Text", 100, 125);
+
+  function testClick() {
+    console.log("click");
+  }
+</script>
