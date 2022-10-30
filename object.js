@@ -73,7 +73,11 @@ let family = [{
     type: "cousin(dad)",
     age: 13
 }];
-
-console.log(family);
-
-
+let learn = [];
+for(index=0; index < family.length; index++) {
+    if (family[index].age < 25) {
+        learn.push(family[index]);
+    }
+}
+//console.log(family);
+console.log(learn)
